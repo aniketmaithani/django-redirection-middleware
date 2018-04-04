@@ -4,5 +4,11 @@
 - This ensure that the old url if indexed by SEARCH ENGINE doesn't show 404.
 - Makes redirection easy
 
+## How to Use
+- Plug this app in your `Django` code base. 
+- Register it up in Installed Apps as `redirection`
+- In MIDDLEWARE section define `redirection.middleware.RedirectionBasedOnSlug`
+- That's about it.
+
 ### PR's are welcome
 
