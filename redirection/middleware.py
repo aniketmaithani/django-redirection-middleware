@@ -14,6 +14,6 @@ class RedirectionBasedOnSlug(object):
                 return redirect(request.build_absolute_uri())
             else:
                 return redirect(redirection_object.redirection_to)
-        except Exception as e:
-            return e.error_message
+        except Exception:
+            pass
         return self.get_response(request)
